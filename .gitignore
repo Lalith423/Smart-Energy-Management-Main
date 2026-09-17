@@ -1,0 +1,36 @@
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---- Secrets / local config ----
+.env
+
+# ---- Generated artefacts (reproducible via scripts) ----
+data/raw/*.csv
+data/processed/*.csv
+data/*.db
+*.db
+models/*.pkl
+models/*.json
+logs/
+*.log
+
+# Keep the folders themselves in Git
+!data/sample/
+!.gitkeep
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
